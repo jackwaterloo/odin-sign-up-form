@@ -32,13 +32,33 @@
             </div>
             <div id="form-div">
                 <h2>Create Your Account!</h2>
-                <form action="">
                     <!--TODO form inputs-->
-                </form>
+                <fieldset>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phoneNum">Phone Number</label>
+                    <input type="number" name="phoneNum" id="phoneNum">
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+
+                    <label for="passwordConfirm">Confirm Password</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm">
+                </fieldset>
             </div>
             <div>
                 <!--form button and login link-->
-                <button>Create Account</button>
+                <button type="button" id="submitBtn">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
