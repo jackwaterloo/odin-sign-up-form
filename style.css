@@ -1,3 +1,97 @@
-div#logo-div {
+/* Font */
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS reset */
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+  
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+  
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+  
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+/* end of CSS reset */
+
+fieldset {
+    border: 0;
+}
+/* general page layout */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.container > div:first-child {
+    flex: 4;
+}
+.container > div:last-child {
+    flex:6;
+}
+.container > div {
+    padding-top: 100px;
+}
+
+/* Odin left side */
+#odin-section{
+    background-image: url(./assets/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#logo-div {
     background-color: rgba(0,0,0,.5);
+    height: 130px;
+}
+#odin-section a, #odin-section{
+    color: white;
+}
+.logo-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#odin-title{
+    font-family: Norse-Bold;
+    font-size: 70px;
+}
+#odin-section footer {
+    height: calc(100vh - 240px);
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
