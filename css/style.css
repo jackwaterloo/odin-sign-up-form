@@ -6,6 +6,9 @@
 
 :root{
     font-family: Arial, Helvetica, sans-serif;
+    --accentColor: #596D48;
+    --inputBorder: #E5E7EB;
+    --webpage-padding: 150px;
 }
 
 /* general page layout */
@@ -22,7 +25,7 @@
     flex:6;
 }
 .container > div {
-    padding-top: 100px;
+    padding-top: var(--webpage-padding);
 }
 
 /* Odin left side */
@@ -46,11 +49,87 @@
 }
 #odin-title{
     font-family: Norse-Bold;
-    font-size: 70px;
+    font-size: 4.5rem;
 }
 #odin-section footer {
-    height: calc(100vh - 240px);
+    height: calc(100vh - (var(--webpage-padding) + 130px));
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+/* right side: form */
+#form-side{
+    background-color: #f9fafc;
+}
+
+#form-div {
+    background-color: white;
+    box-shadow: 0px 2px 15px #AAA9A9;
+    padding-inline: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#form-div > *{
+    padding-block: 10px;
+}
+
+label {
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.input-row{
+    display: flex;
+    gap: 50px;
+}
+
+input{
+    border: 2px solid var(--inputBorder);
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 2px solid blue;
+    outline: 0;
+    box-shadow: 3px 3px 6px rgba(172, 172, 172, 0.8);
+}
+
+#submit-div{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#submit-div > *{
+    margin-block: 10px;
+}
+
+#intro-div {
+    padding-inline: 30px;
+    padding-bottom: 30px;
+}
+
+#intro-div p{
+    padding-block: 10px;
+    font-weight: 600;
+}
+
+.field{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+:any-link{
+    color: var(--accentColor);
+}
+
+button{
+    background-color: var(--accentColor);
+    color: white;
+    padding-inline: 55px;
+    padding-block: 10px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.8);
 }

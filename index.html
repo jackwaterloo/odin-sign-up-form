@@ -26,9 +26,9 @@
             </footer>
         </div>
         
-        <div>
+        <div id="form-side">
             <!--Form side-->
-            <div>
+            <div id="intro-div">
                 <!--text above form-->
                 <p>
                     This is not a real online service! You know you need something
@@ -42,30 +42,41 @@
             <div id="form-div">
                 <h2>Create Your Account!</h2>
                     <!--TODO form inputs-->
-                <fieldset>
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName">
-                </fieldset>
-
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="phoneNum">Phone Number</label>
-                    <input type="number" name="phoneNum" id="phoneNum">
-                </fieldset>
-
-                <fieldset>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-
-                    <label for="passwordConfirm">Confirm Password</label>
-                    <input type="password" name="passwordConfirm" id="passwordConfirm">
-                </fieldset>
+                
+                    <div class="input-row">
+                        <div class="field">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="field">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                    </div>
+                
+                    <div class="input-row">
+                        <div class="field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="field">
+                            <label for="phoneNum">PHONE NUMBER</label>
+                            <input type="number" name="phoneNum" id="phoneNum">
+                        </div>
+                    </div>
+                
+                    <div class="input-row">
+                        <div class="field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="field">
+                            <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                        </div>
+                    </div>
             </div>
-            <div>
+            <div id="submit-div">
                 <!--form button and login link-->
                 <button type="button" id="submitBtn">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
