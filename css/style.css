@@ -90,6 +90,14 @@ input{
     border-radius: 5px;
 }
 
+input.redBorder{
+    border: 2px solid red;
+}
+
+input.greenBorder{
+    border: 2px solid green;
+}
+
 input:focus{
     border: 2px solid blue;
     outline: 0;
@@ -132,4 +140,16 @@ button{
     border-radius: 10px;
     border: 0;
     box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.8);
+}
+
+#errorMessage{
+    font-size: .7rem;
+}
+
+.error{
+    color: red;
+}
+
+.correct{
+    color: green;
 }
