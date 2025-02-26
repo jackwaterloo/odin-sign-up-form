@@ -11,3 +11,9 @@ You can visit the deployed version of my code here: [https://jackwaterloo.github
 - Forms
     - Form Basics
     - Form Validation
+        - Basic Javascript
+
+## JavaScript
+The `index.js` file's sole purpose to is perform password validation. Because I haven't set up
+any end points to submit the form to with a post request, I validate the password 
+fields match with a button event listener.
